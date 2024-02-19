@@ -1,0 +1,10 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+
+@await Html.PartialAsync("_AboutPartial")
+
+<script>
+    document.querySelector("body").classList.add("sub_page");
+    document.querySelector(".who_section").classList.add("layout_padding")
+</script>

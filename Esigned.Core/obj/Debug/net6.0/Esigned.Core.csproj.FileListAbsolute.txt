@@ -1,0 +1,11 @@
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\bin\Debug\net6.0\Esigned.Core.deps.json
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\bin\Debug\net6.0\Esigned.Core.dll
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\bin\Debug\net6.0\Esigned.Core.pdb
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\Esigned.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\Esigned.Core.AssemblyInfoInputs.cache
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\Esigned.Core.AssemblyInfo.cs
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\Esigned.Core.csproj.CoreCompileInputs.cache
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\Esigned.Core.dll
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\refint\Esigned.Core.dll
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\Esigned.Core.pdb
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\ref\Esigned.Core.dll
