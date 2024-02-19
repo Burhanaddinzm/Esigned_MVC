@@ -1,5 +1,7 @@
-﻿@{
+﻿@model HomeViewModel
+@{
     ViewData["Title"] = "Esigned";
+    int SliderIndex = 0;
 }
 
 @section SliderSection
@@ -9,89 +11,39 @@
         <div class="container">
             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    @for (int i = 0; i < Model.Sliders.Count(); i++)
+                    {
+                        <li data-target="#carouselExampleIndicators" data-slide-to="@i" class="@(i == 0 ? "active":"")"></li>
+                    }
                 </ol>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="row">
-                            <div class="col">
-                                <div class="detail-box">
-                                    <div>
-                                        <h2>
-                                            welcome to
+                    @foreach (Slider slider in Model.Sliders)
+                    {
+                        <div class="carousel-item @(SliderIndex == 0 ? "active":"")">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="detail-box">
+                                        <div>
+                                            <h2>
+                                                @slider.Title
 
-                                        </h2>
-                                        <h1>
-                                            web agency
-                                        </h1>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                            labore
-                                        </p>
-                                        <div class="">
-                                            <a href="">
-                                                Contact us
-                                            </a>
+                                            </h2>
+                                            <p>
+                                                @slider.Description
+                                            </p>
+                                            <div class="">
+                                                <a href="">
+                                                    Contact us
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col">
-                                <div class="detail-box">
-                                    <div>
-                                        <h2>
-                                            welcome to
+                        SliderIndex++;
+                    }
 
-                                        </h2>
-                                        <h1>
-                                            web agency
-                                        </h1>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                            labore
-                                        </p>
-                                        <div class="">
-                                            <a href="">
-                                                Contact us
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col">
-                                <div class="detail-box">
-                                    <div>
-                                        <h2>
-                                            welcome to
-
-                                        </h2>
-                                        <h1>
-                                            web agency
-                                        </h1>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                            labore
-                                        </p>
-                                        <div class="">
-                                            <a href="">
-                                                Contact us
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -100,7 +52,7 @@
     <!-- end slider section -->
 }
 
-@await Html.PartialAsync("_ServicePartial")
+@await Html.PartialAsync("_ServicePartial",Model.Services)
 
 @await Html.PartialAsync("_AboutPartial")
 

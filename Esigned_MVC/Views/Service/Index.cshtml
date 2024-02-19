@@ -1,8 +1,9 @@
-﻿@{
+﻿@model IEnumerable<Service>
+@{
     ViewData["Title"] = "Service";
 }
 
-@await Html.PartialAsync("_ServicePartial")
+@await Html.PartialAsync("_ServicePartial", Model)
 
 <script>
     document.querySelector("body").classList.add("sub_page");

@@ -19,8 +19,4 @@
     <ProjectReference Include="..\Esigned.Core\Esigned.Core.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ViewModels\" />
-  </ItemGroup>
-
 </Project>

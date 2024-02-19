@@ -5,10 +5,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<EsignedDbContext>(cfg => cfg.UseSqlServer("Default", opt =>
+builder.Services.AddDbContext<EsignedDbContext>(cfg => cfg.UseSqlServer(
+    builder.Configuration.GetConnectionString("Default"), opt =>
 {
     opt.MigrationsHistoryTable("Migrations");
-}));
+}
+));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

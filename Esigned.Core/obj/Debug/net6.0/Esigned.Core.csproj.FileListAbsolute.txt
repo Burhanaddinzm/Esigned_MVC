@@ -9,3 +9,4 @@ C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\Esigned.C
 C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\refint\Esigned.Core.dll
 C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\Esigned.Core.pdb
 C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\ref\Esigned.Core.dll
+C:\Users\Burhan\source\repos\Esigned_MVC\Esigned.Core\obj\Debug\net6.0\Esigned.Core.sourcelink.json
